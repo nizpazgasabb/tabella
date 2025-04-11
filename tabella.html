@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabella</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    table {
+      background-color: #FAFAD2; /* LightGoldenRodYellow */
+      border: 2px solid #4682B4; /* SteelBlue */
+      border-collapse: collapse;
+      width: 70%;
+      margin: auto;
+      color: #333;
+    }
+
+    th, td {
+      border: 2px solid #4682B4; /* SteelBlue */
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #B0E0E6; /* PowderBlue */
+    }
+
+    tr:nth-child(even) {
+      background-color: #E6E6FA; /* Lavender */
+    }
+
+    tr:nth-child(odd) {
+      background-color: #FFF0F5; /* LavenderBlush */
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center;">Esercizio su una tabella con colspan e rowspan </h2>
+  <table>
+    <tr>
+      <th rowspan="2">Nome</th>
+      <th colspan="2">Contatti</th>
+    </tr>
+    <tr>
+      <th>Email</th>
+      <th>Telefono</th>
+    </tr>
+    <tr>
+      <td>Mario Rossi</td>
+      <td>mario@example.com</td>
+      <td>123456789</td>
+    </tr>
+    <tr>
+      <td>Luca Bianchi</td>
+      <td colspan="2">Non disponibile</td>
+    </tr>
+    <tr>
+      <td>Giulia Verdi</td>
+      <td>giulia.verdi@example.com</td>
+      <td>987654321</td>
+    </tr>
+    <tr>
+      <td>Francesca Neri</td>
+      <td colspan="2">Contatti riservati</td>
+    </tr>
+    <tr>
+      <td>Antonio De Luca</td>
+      <td>antonio.dl@example.com</td>
+      <td>3344556677</td>
+    </tr>
+  </table>
+</body>
+</html>
